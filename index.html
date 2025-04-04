@@ -28,10 +28,20 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
   </style>
+  <script>
+    // ฟัง event message จาก iframe (Google Apps Script)
+    window.addEventListener("message", function (event) {
+      if (event.data === "FORM_SUBMITTED_SUCCESS") {
+        // ✅ Redirect ไปหน้า thankyou.html เมื่อส่งสำเร็จ
+        window.location.href = "thankyou.html";
+      }
+    });
+  </script>
 </head>
 <body>
   <h1>📦 iStudio By SPVi @ Central Nakhonsawan</h1>
 
+  <!-- ฝังฟอร์มจาก Apps Script -->
   <iframe src="https://script.google.com/macros/s/AKfycbxVa5zIaaNMf_yK42HxqD2Z6ghQ07lbI0ExBLGL1uSpHQpOxIx__4v5qvuLBZPAd2kT/exec" allowfullscreen></iframe>
 </body>
 </html>
