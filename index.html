@@ -11,27 +11,53 @@
       margin: 0;
       padding: 40px 20px;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      min-height: 100vh;
     }
+
+    .container {
+      width: 100%;
+      max-width: 420px; /* ขนาดเหมือนมือถือ */
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
     h1 {
       margin-bottom: 20px;
       color: #1a1a1a;
       text-align: center;
+      font-size: 18px;
     }
+
     iframe {
-      border: none;
       width: 100%;
-      max-width: 800px;
-      height: 720px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      height: 640px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .container {
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1></h1>
+  <div class="container">
+    <h1>📦 iStudio By SPVi @ Central Nakhonsawan</h1>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbxVa5zIaaNMf_yK42HxqD2Z6ghQ07lbI0ExBLGL1uSpHQpOxIx__4v5qvuLBZPAd2kT/exec" allowfullscreen></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbxVa5zIaaNMf_yK42HxqD2Z6ghQ07lbI0ExBLGL1uSpHQpOxIx__4v5qvuLBZPAd2kT/exec" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
