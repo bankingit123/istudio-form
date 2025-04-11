@@ -2,24 +2,64 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iStudio By SPVi</title>
   <style>
-    html, body {
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #fff;
+      padding: 20px;
     }
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #0056b3;
+    }
+
+    p.note {
+      margin-top: 20px;
+      color: #888;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbzgG1HYpfDxRfggJ6J_mHdU7lD5IqzQ86y3UHzLta4BXswPQTejuT6VNBr9lAjU0bK4/exec" allowfullscreen></iframe>
+  <div class="container">
+    <h1>📱 iStudio By SPVi</h1>
+    <a class="button" href="https://script.google.com/macros/s/AKfycbzgG1HYpfDxRfggJ6J_mHdU7lD5IqzQ86y3UHzLta4BXswPQTejuT6VNBr9lAjU0bK4/exec" target="_blank">
+      เปิดหน้าใช้งานระบบ
+    </a>
+    <p class="note">ระบบนี้เปิดใช้งานผ่าน Google Apps Script</p>
+  </div>
 </body>
 </html>
